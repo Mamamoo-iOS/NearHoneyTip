@@ -11,7 +11,9 @@
 #import <CoreData/CoreData.h>
 #import <CoreLocation/CoreLocation.h>
 #import <ADSupport/ASIdentifierManager.h>
+
 @class NHTGetLocationViewController;
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -23,12 +25,13 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain) CLLocationManager *locationManager;
 
+
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
 - (void)setUserDefault;
 - (void)getAdvertisingIdentifier;
-
+- (void)getUserGPS;
 
 
 
